@@ -18,7 +18,7 @@
 		<a href="website.html">Home</a>
 		<a href="aboutus.html" >About us</a>
 		<a href="adopt.html" >Adopt </a>
-		<a href="funds.html" >Funds</a>
+		<a class="active" href="funds.html" >Funds</a>
 		<a href="contact.html" >Contact us</a>
 	</center>
 		</div>
@@ -26,7 +26,7 @@
 </div>
 <br>
 <div class="container">
-  <form name="DonationForm" id="form" action="feedback.html" onsubmit="return handleSubmit()">
+  <form name="DonationForm" id="form" onsubmit="return handleSubmit()">
 
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
@@ -65,39 +65,48 @@
 	        function handleSubmit(){
 			         var name = document.DonationForm.name.value;
 					 if (name===""){
-					           alert("Name Should Not Be Empty!")
+					           console.log("Name Should Not Be Empty!")
 							   return false;
 					 }
 					 var email = document.DonationForm.email.value;
 					 if (email===""){
-					           alert("Email Should Not Be Empty!")
+					            console.log("Email Should Not Be Empty!")
 							   return false;
 					 }
 					 var card = document.DonationForm.card.value;
 					 if (card===""){
-		                       alert("Card Number Should Be 15")	
+		                        console.log("Card Number Should Be 15")	
                                return false;							   
 					 }
 					 var number = document.DonationForm.number.value;
 					 if(number===""){
-					           alert("Number Should Be 10!")
+					            console.log("Number Should Be 10!")
 							   return false;
 					 }		   
 					 var code = document.DonationForm.code.value;
 					 if(code===""){
-					           alert=("Code Should Not Be Empty")
+					            console.log("Code Should Not Be Empty")
                                return false;							   
 					 } 
 					 var city = document.DonationForm.city.value;
 					 if(city===""){
-					           alert=("City Should Not Be Empty")
+					            console.log("City Should Not Be Empty")
 							   return false;
 					 }
 					 var street = document.DonationForm.street.value;
 					 if (street===""){
-					           alert("StreetShould Not Be Empty!")
+					            console.log("StreetShould Not Be Empty!")
 							   return false;
 							   }
 					 }
+					 
+					 console.log("name", name);
+					 console.log("email", email);
+					 console.log("card", card);
+					 console.log("code", code);
+					 console.log("city", city);
+					 alert()
+					 
+				}
 </script>
 </html>

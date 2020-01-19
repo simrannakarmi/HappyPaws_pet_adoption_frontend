@@ -1,6 +1,6 @@
 body{
 	
-	background-color:#c67621;
+	background-color:white;
 }
 
 .mainnav{
@@ -13,6 +13,7 @@ body{
 		background-color:#924f14;
 		overflow:hidden;
 position:fixed;
+z-index:1;
 }
 
 .section{
@@ -23,8 +24,8 @@ position:fixed;
 	 height:auto;
 }
 .logo img{
-			width:7vw;
-			height:10vh;
+			width: 60px;
+			height:64px;
 			float: left;
 	}
 	body{
@@ -52,7 +53,9 @@ position:fixed;
 	.mainnav-right {
 		float: right;
 	}
-	
+	.mainnav a.active {
+  background-color:grey;
+  color: white;
 	
 	.container{
 height:auto;  
