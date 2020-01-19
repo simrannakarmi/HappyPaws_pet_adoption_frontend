@@ -2,20 +2,17 @@ body{
 	
 	background-color:white;
 }
-
 .mainnav{
-	 top: 00px;
+	top: 00px;
 	height: 62px;
-	 width:100%;
-	 text-align:center;
-	 
-	 float:right;
-		background-color:#924f14;
-		overflow:hidden;
-position:fixed;
-z-index:1;
+	width:100%;
+	text-align:center;
+	#float:right;
+	background-color:#924f14;
+	#overflow:hidden;
+	position:fixed;
+	z-index:1;
 }
-
 .section{
 	margin-top:20%;
 	margin-left:-100%;
@@ -56,9 +53,9 @@ z-index:1;
 	.mainnav a.active {
   background-color:grey;
   color: white;
-	
+	}
 	.container{
-height:auto;  
+  height:auto;  
   width: 1280px;
   margin:70px auto 0;
   display:flex;
